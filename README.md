@@ -1,4 +1,4 @@
-## Custom DropDown References : 
+## Custom DropDown References: 
 ## CSS-Tricks - Custom Select Dropdown Styling:
 
 ##Article: https://css-tricks.com/styling-a-select-like-its-2019/
