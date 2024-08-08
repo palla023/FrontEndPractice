@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Tilt+Neon&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.container_fluid {
+    width: 100%;
+    /* background-color: #5cdb95; */
+}
+
+.container {
+    width: 1120px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.container header {
+    overflow: hidden;
+}
+
+.col, .col_s {
+    float: left;
+}
+
+.col {
+    width: 280px;
+    padding: 10px 0;
+}
+.col.tp{
+    padding: 20px 0;
+}
+
+.noBorder {
+    border: none;
+}
+
+.book_now_btn {
+    padding: 10px 30px;
+    background-color: #05386b;
+    color: #ffffff;
+}
+
+.banner {
+    background-image: url("../images/banner.jpg");
+    background-size: 100% 100%;
+    height: 800px;
+}
+
+.msg_block{
+    width: 430px;
+    /* height: 500px; */
+    padding: 75px;
+    background-color: rgba(255, 255, 255, 0.8);
+    margin-top: 125px;
+    margin-left: 100px;
+    border-left: 10px solid #000;
+}
+
+.msg_block h1{
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+    line-height: 40px;
+}
+
+.msg_block p {
+    line-height: 30px;
+    margin-bottom: 10px;
+
+}
+
+.orange {
+    background-color: #F13C20;
+}

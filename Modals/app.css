@@ -1,0 +1,44 @@
+.container {
+    width: 400px;
+    margin: 0 auto;
+}
+
+.mb_mask.show,  .mb_modal_wrap.show{
+    display: block;
+}
+
+.mb_mask, .mb_modal_wrap {
+    display: none;
+}
+
+.mb_mask {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 9;
+}
+.mb_modal_wrap {
+    position: fixed;
+    top:30%;
+    left: 30%;
+    width: 300px;
+    background-color: black;
+    color: #fff;
+    z-index: 99;
+    padding: 10px;
+}
+
+.mb_modal_wrap .close {
+    position: absolute;
+    right: -15px;
+    top: -15px;
+    cursor: pointer;
+}
+
+/* Boostrap CSS Classes Overwritten */
+#exampleModal .modal-dialog .modal-content {
+    background-color: blueviolet;
+}

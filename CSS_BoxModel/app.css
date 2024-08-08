@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Tilt+Neon&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.parentCls {
+    background-color: blue;
+    padding: 20px;
+    width: 300px;
+    margin: 5px auto; 
+    /* topBottom leftRight */
+}
+
+.box {
+    border: 1px solid green;
+    margin: 10px;
+    padding: 10px;
+    background-color: aqua;
+}
+
+.wrap {
+    width: 600px;
+    /* display: flex; */
+    overflow: hidden;
+}
+
+.block {
+    margin: 0 10px;
+    width: 158px;
+    float: left;
+    font-size: 13px;
+    border: 1px solid #cfcfcf;
+    font-family: 'Roboto', sans-serif;
+}
+h2 {
+    background-color: bisque;
+    padding: 0 10px;
+}
+p {
+    padding: 5px 10px;
+}

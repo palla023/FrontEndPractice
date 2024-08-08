@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            width: 400px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>BOM: Browser Object Model</h1>
+        <a href="http://www.yahoo.com" id="g_id"> Google </a>
+        <div id="aboutus">
+            <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nobis sint reiciendis aperiam libero
+                recusandae unde ratione repellendus blanditiis id molestias iusto, cumque quia molestiae dolore maxime
+                dignissimos aspernatur explicabo dolor.
+            </p>
+        </div>
+
+        <script>
+            //location
+            // http://127.0.0.1:5500/#aboutus?name="sai"&id="001"&
+
+            //protocal://hostname/hash?queryparam_1&queryparam_1
+            document.querySelector("#g_id").onclick = (event) => {
+                event.preventDefault();
+                const st = {
+                    page_id: "1",
+                    user_id: "2"
+                }
+                const url = "index.html";
+                history.pushState(st, "", url ) 
+                const geoLocations = window.navigator.geolocation;
+                // WebSocket APIS
+                console.log("geoLocations: ", window.history.length);
+
+                // if(window.screen.width === "367") {
+                //     window.location.href = "mobile.html"
+                // } else {
+                //     window.location.href = "desktop.html"
+                // }
+
+                // console.log("Screen: ", )
+                //en-GB[Global] - Internalaization
+                //en-US
+                //en-UK
+                //en-in
+                //ja
+                const loc = window.location.pathname;
+                console.log('loc: ', window.location.port)
+
+                if (loc.indexOf('JS_Browser') !== -1) {
+                    window.location.href = "http://www.google.com"
+                } else {
+                    alert("Your trying in wrong date!")
+                }
+                console.log('loc: ', loc)
+                // 
+            }
+            // console.log(window.location.href)
+
+            //POC - Proof of Concept
+            // const decision = window.confirm("Are you sure to cancel this request?");
+
+            // console.log(decision)
+        </script>
+    </div>
+</body>
+
+</html>

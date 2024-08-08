@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            width: 400px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1> Objects </h1>
+
+    </div>
+    <script>
+        /**
+        //Memory Life Cycle - 
+         * 
+         * Allocate Memory
+         * Create/Write
+         * Release Memory
+         * 
+         * - functions
+         * 
+         * - scope
+         * var a = "Sai"// Memory Allocate - scope
+         * 
+         * */
+
+        //  console.log(window);
+        //  var a = "hulk";
+        //  console.log("window a: ", window.a)
+
+        // const myArray = ["Iron Man"]; myArray[0]
+        // //key paired values -
+
+        // design patterns - Bahubali
+
+        //Object Literal
+        //Contructor Function
+
+        //Govt
+        // var usersX = { //Object Literal
+        //     name: "Sai",
+        //     id: "22",
+        //     email: "abc@abc.com",
+        //     company: "X"
+        // }
+
+
+        // function Employee (user) {
+        //     this.name = user;
+        //     this.id= Math.random();
+        //     this.email = user+"@abc.com";
+        // }
+
+        //constructor pattern
+        // var x = new Object(); //{}
+        // var emp_1 = new Employee("Sai");
+        // var emp_2 = new Employee("Smith");
+
+
+        // console.log('emp_1: ', emp_1, emp_2)
+
+        var myObject = {
+            ironMan: "Iron Man",
+            spiderMan: "Spider Man",
+            captian: "Captian America",
+            hulk: "hulk",
+            superMan: "Super Man",
+            antMan: "Ant Man 1"
+        };
+
+        const {
+            hulk,
+            ironMan,
+            captian,
+            superMan,
+            spiderMan,
+            antMan = "Ant Man"
+        } = myObject;
+
+        console.log('ironMan: ', {...myObject});
+        // console.log('ironMan: ', antMan)
+        //functions
+
+       // ["ironMan", "spiderMan", "captian", "hulk", "superMan"]
+
+        const h = "hulk";
+        console.log(myObject[h]) //myObject["hulk"]
+        //console.log(myObject["hulk"])
+        //
+
+        //myObject.captian = "Captian America";
+        // delete myObject.ironMan;
+        //  myObject.ironMan
+
+        // console.log(Object.keys(myObject))
+
+
+        // for (let i = 0; i < Object.keys(myObject).length; i++) {
+        //     let hero = Object.keys(myObject)[i];
+
+        //     if(hero && hero === "antMan") {
+
+        //     }
+
+        //     console.log(myObject[hero])
+        //     //console.log("each item: ", )
+        // }
+
+
+    </script>
+</body>
+
+</html>

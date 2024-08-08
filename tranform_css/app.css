@@ -1,0 +1,66 @@
+* {
+    margin: 0;
+    padding: 0
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Tilt+Neon&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+    /* font-size: 100%; */
+}
+
+.wrap {
+    width: 300px;
+    margin: 0 auto;
+    /* height: 400px; */
+    border: 1px solid #000;
+    position: relative;
+}
+
+.box {
+    width: 50px;
+    height: 50px;
+    padding: 10px;
+    text-align: center;
+    background-color: red;
+    /* transform: rotate(180deg); */
+    margin-bottom: 5px;
+    transform: translate(x, y);
+}
+
+.parent > .box:first-child{
+    background-color: blue;
+    transform: rotate(45deg);
+}
+
+.box + .box + .box {
+    background-color: green;
+}
+
+.box:not(.noColor){
+    background-color: grey;
+}
+
+.reflection {
+    transform: rotateY(180deg);
+    
+}
+
+.reflection .innerTxt {
+    transform:rotateX(360deg);
+    /* Chrome */
+    -webkit-transform: rotateX(180deg);
+    /* Firefox */
+    -moz-transform: rotateX(180deg);
+    /* Internet Explores -ms */
+    -ms-transform: rotateX(180deg);
+    /* Opera */
+    -o-transform: rotateX(180deg);
+
+    display: flex;
+    flex-direction: row-reverse;
+    /* direction: ltr; 
+        hack
+    */
+}

@@ -1,0 +1,238 @@
+/*
+ Common Styles
+ @authors: Sai
+*/
+
+* {
+    margin: 0;
+    padding: 0
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Tilt+Neon&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.wrap {
+    width: 1120px;
+    margin: 0 auto;
+}
+
+.carousel {
+    height: 400px;
+    margin-bottom: 10px;
+}
+
+.carousel img {
+    width: 100%;
+    height: 100%;
+}
+
+.flex {
+    display: flex;
+}
+
+.col {
+    margin-right: 5px;
+}
+
+.col.last {
+    margin-right: 0;
+}
+
+.col h2,
+.col p {
+    padding: 10px;
+}
+
+/* Light Theme Start */
+body.light .col h2 {
+    background-color: #379683;
+    color: #ffffff;
+}
+
+body.light .col p {
+    background-color: #8EE4AF;
+    color: #000000;
+}
+
+/* Light Theme End */
+
+/* Dark Theme Start */
+body.dark .col h2 {
+    background-color: #05386B;
+    color: #ffffff;
+}
+
+body.dark .col p {
+    background-color: #379683;
+    color: #000000;
+}
+
+/* Header, TopNav Starts*/
+.topNav a {
+    text-decoration: none;
+    display: inline-block;
+    margin: 5px;
+    padding: 10px;
+    color: #000000;
+
+}
+
+.topNav a:hover {
+    color: #cfcfcf;
+    text-decoration: underline;
+}
+
+/* End */
+
+/* About Section CSS Start*/
+.about {
+    margin-top: 10px;
+}
+
+.about .left {
+    padding: 20px;
+    padding-top: 100px;
+}
+
+.about .left p {
+    margin-top: 10px;
+    padding: 10px 0;
+}
+
+.about .left button {
+    padding: 10px 25px;
+    border: none;
+    border-radius: 10px;
+    background-color: #05386B;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.about .left button:hover {
+    background-color: #379683;
+
+}
+
+/* END */
+
+/* Footer Start */
+.footer {
+    background-color: #363636;
+    padding: 10px;
+    color: #ffffff;
+    font-size: 12px;
+    text-align: center;
+}
+
+.footer .content {
+    width: 667px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* Footer End */
+
+
+/* Dark Theme End*/
+
+/* RWD */
+/* @media print { 
+    .copyright {
+        display: block;
+    }
+} */
+
+/* Mobile/Extra Small - xs */
+@media screen and (min-width: 250px) {
+    .wrap {
+        width: 90%;
+    }
+
+    .flex {
+        flex-direction: column;
+    }
+
+    .col {
+        margin-bottom: 5px;
+        margin-right: 0;
+    }
+
+    .carousel.sm {
+        display: block;
+    }
+
+    .carousel.md {
+        display: none;
+    }
+
+    /* About Sesction Statrt Mobile */
+    .about .left {
+        padding: 10px 0;
+    }
+
+    /* End*/
+}
+
+/* Small - sm */
+@media screen and (min-width: 1023px) {
+    .wrap {
+        width: 90%;
+    }
+
+    .flex {
+        flex-direction: row;
+    }
+
+    .col {
+        margin-bottom: 0;
+        margin-right: 5px;
+    }
+
+    .carousel.md {
+        display: block;
+    }
+    .carousel.sm {
+        display: none;
+    }
+    .about .left {
+        padding: 20px;
+        padding-top: 100px;
+    }
+
+}
+
+/* Desktop [Medium] -md  */
+@media screen and (min-width: 1024px) {
+    .flex {
+        flex-direction: row;
+    }
+
+    .col {
+        margin-bottom: 0;
+        margin-right: 5px;
+    }
+
+    .carousel.md {
+        display: block;
+    }
+
+    .carousel.sm {
+        display: none;
+    }
+
+    .about .left {
+        padding: 20px;
+        padding-top: 100px;
+    }
+}
+
+
+/* Desktop [Large] - lg */
+/* @media screen and (min-width: 1300px) {
+    body {
+        background-color: yellow;
+    }
+} */

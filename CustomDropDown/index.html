@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./app.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="wrap">
+        <h1>Custom DropDown</h1>
+        <!-- <select id="select_hide">
+            <option value="en_us"></option>
+            <option value="te">Telugu </option>
+            <option value="ta"> Tamil </option>
+            <option value="hi">Hindi </option>
+        </select> -->
+        <div class="custom_dropdown" data-id="custom_dropdown" id="custom_dropdown">
+            <h2 id="title">All Categories</h2>
+            <div class="list_item" data-lang="en-us"> English </div>
+            <div class="list_item" data-lang="tl_in"> Telugu </div>
+            <div class="list_item" data-lang="ta_in"> Tamil </div>
+            <div class="list_item" data-lang="hi_in"> Hindi </div>
+        </div>
+    </div>
+
+    <script>
+        var dd = document.getElementById("custom_dropdown");
+        var title = document.getElementById("title");
+        var listItems = document.getElementsByClassName("list_item");
+
+        console.log(listItems)
+
+        var payload = {
+            lang: ''
+        }
+
+        //var ddElem = dd.getAttribute("data-id");
+        for (var i = 0; i < listItems.length; i++) {
+            listItems[i].addEventListener("click", function (event) {
+                // console.log(event)
+                title.innerText = event.target.innerText;
+                payload.lang = event.target.getAttribute("data-lang");
+                console.log(payload);
+            })
+        }
+
+    </script>
+</body>
+
+</html>

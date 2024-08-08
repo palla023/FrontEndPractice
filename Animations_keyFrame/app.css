@@ -1,0 +1,75 @@
+* {
+    margin: 0;
+    padding: 0
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Tilt+Neon&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+    /* font-size: 100%; */
+}
+
+.wrap {
+    width: 400px;
+    margin: 0 auto;
+    height: 400px;
+    border: 1px solid #000;
+    position: relative;
+}
+/* 
+.block {
+    width: 100px;
+    height: 100px;
+    background-color: green;
+    animation-name: divColorChange;
+    animation-duration: 6s;
+}
+
+@keyframes divColorChange {
+    from { background-color: green;}
+    to { background-color: yellow;}
+    hacks
+} */
+
+.block {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    background-color: green;
+    left: 0;
+    top:0;
+    animation-name: slider;
+    animation-duration: 6s;
+    /* animation-delay: -2s; */
+    animation-iteration-count:infinite;
+}
+
+@keyframes slider {
+    0% {
+        background-color: green;
+        left:0;
+        top:0;
+    }
+    25% {
+        background-color: yellow;
+        left: 300px;
+        top:0;
+    }
+    50% {
+        background-color: pink;
+        left: 300px;
+        top:300px;
+    }
+    75% {
+        background-color: pink;
+        left: 0;
+        top:300px;
+    }
+    100% {
+        background-color: blue;
+        left: 0;
+        top:0;
+    }
+}
+

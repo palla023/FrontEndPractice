@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            width: 400px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            text-align: center;
+        }
+        .animate {
+            width:100px;
+            height: 100px;
+            background-color: red;
+
+        }
+        .animate.active {
+            transform: translate(300px);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1> Functions & Arrow Functions </h1>
+
+        <div style="width: 400px;">
+            <div class="animate">
+
+            </div>
+        </div>
+        <button> Animate </button>
+        <!-- BOA - Contruction Function/class
+            CC - hdapply - account
+            peronal - account
+            DC -->
+    </div>
+    <script>
+        var a = "123";
+       // console.log(a)
+      //  console.log("Hello ",this)
+
+        //reference - scope
+        const user = {
+            name: "Johnson"
+        }
+
+    //     function printNumbers() {
+    //         console.log(arguments)
+    //         const arr = [1,2,3,4,5];
+    //         arr.push(a);
+    //         arr.push(b);
+    //         arr.push(c);
+
+    //         // console.log(this)
+    //         for(let i = 0; i < arr.length; i++) {
+    //             console.log("num: ", arr[i])
+    //         } 
+    //     }
+    //    printNumbers(6,7,8)
+       // printNumbers.call(user,6,7,8);
+       // printNumbers.apply(user,[6,7,8]);
+
+
+    //    accenture - Sai - this
+
+    //    facebook - accenture.call(this) - this.name - (Sai) 
+
+
+    function addition(a, b) {
+        console.log(this);
+        return a + b;
+    }
+
+    const result = addition(24,29);
+
+    console.log("result: ", result);
+
+
+    function divAnimate() {
+        document.getElementsByClassName("animate")[0].className = "animate active";
+    }
+
+    document.getElementsByTagName("button")[0].addEventListener("click", () => {
+        console.log(this)
+        divAnimate()
+    })
+
+    const arrowAddition = (a, b) => {
+       // console.log(arguments)
+        console.log(this)
+        return (a+b)
+    };
+
+    console.log(arrowAddition(39, 49))
+
+    </script>
+</body>
+</html>

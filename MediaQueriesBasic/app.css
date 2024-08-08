@@ -1,0 +1,30 @@
+
+* {
+    margin: 0;
+    padding: 0
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Tilt+Neon&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+    /* font-size: 100%; */
+}
+
+.wrap {
+    width: 100vw;
+    margin: 0 auto;
+    background-color: #cfcfcf;
+    height: 50vh;
+}
+/* pt, vw/vh/ rem */
+p {
+    /* font-size: 10vw; */
+    font-size: 12px;
+}
+/* 
+@media (min-width: 350px) and (max-width: 700px) {
+    p:hover {
+        font-size: 2em;
+    }
+} */

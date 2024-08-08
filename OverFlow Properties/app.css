@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Tilt+Neon&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.wrap {
+    /* min-width: 200px;
+    max-width: 400px;
+    min-height: 200px;
+    display: inline-block;
+    background-color: red; */
+    width: 1120px;
+    margin: 0 auto;
+   
+}
+
+.text_block {
+    float: left;
+    padding: 10px;
+    width: 248px;
+    min-height: 180px;
+    max-height: 180px;
+    border-bottom: 5px solid #cfcfcf;
+    /* border-right: none; */
+    margin-right: 10px;
+    border-radius: 10px;
+    /* h-offset v-offset blur color */
+    box-shadow: 0px 0px 3px #888888;
+}
+.text_block h3 {
+    min-height: 45px;
+}
+
+.text_block.last {
+    /* border-right: 1px solid #cfcfcf; */
+    margin-right: 0;
+}
+
+.text_block p {
+    max-height: 58px;
+    overflow: hidden;
+/*    overflow-y: scroll; */
+}
+
+.text_block p:hover {
+    overflow-y: scroll;
+}
+
+body.dark {
+    background-color: #000000;
+    color: #ffffff;
+}

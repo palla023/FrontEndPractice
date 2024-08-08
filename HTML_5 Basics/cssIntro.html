@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        /* 
+        story - 1  developement done -> testing
+            bug- 1
+         */
+        /* selectors  3
+            CSS Specificity
+
+            Tag Name -    1pt
+            Class Name - 10 pt
+            ID - 100 pt
+            inline style - 500
+            !import - 1000
+        */
+        app3.css
+        .head {
+            color: red;
+        }
+
+        app1.css
+        h1 {
+            color: pink !important;
+        }
+        app2.css
+        #header {
+            color: blue;
+        }
+        
+/* 1+10+100+1000 = 1111 */
+        h1.head#header { 
+            color:chartreuse !important
+        }
+       
+    </style>
+   <block>
+
+       <h1 class="head" id="header" style="color: yellow">Welcome to CSS!</h1>
+       <h1>Welcome to CSS! This is Palla</h1>
+       <h1 class="head">Welcome to CSS! This is Palla</h1>
+   </block>
+
+
+</body>
+</html>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            width: 400px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>BOM: Browser Object Model</h1>
+        <script>
+            // var a = 10;
+            // console.log("a: ", a);
+            // console.log("A prints value 10"); //show stopper - error handling/blocker
+            // console.warn("Please check your code!")
+            // console.error("Please check your code!")
+            // alert("Hello Welcome to BOM!"); //show stoppers
+            // next -error
+
+            function printATable() {
+                //after code refactor
+                const tablenum = window.prompt("Please enter your table number!");
+
+                if(isNaN(tablenum)) {
+                    return
+                }
+
+                for (let i = 1; i <= 10; i++) {
+                    console.log(tablenum, "*", i, "=", (tablenum + i))
+                }
+            } 
+                // printATable()
+
+            // function printATable() {
+            //     //before code refactor
+            //     const tablenum = window.prompt("Please enter your table number!");
+
+            //     const num = isNaN(tablenum)
+            //         ? null
+            //         : parseInt(tablenum);
+
+            //     if (!isNaN(num)) {
+            //         for (let i = 1; i <= 10; i++) {
+            //             console.log(tablenum, "*", i, "=", (tablenum + i))
+            //         }
+            //     } else {
+            //         alert("Please enter a number to print a table!")
+            //     }
+            // }
+
+            printATable();
+                
+                
+           // }
+                // "3"
+                // parseInt() //Method
+                // NaN //- KeyWord
+                // isNaN() //Method
+            // if(tablenum === parseInt(tablenum)) {
+            //     parseInt(tablenum) 
+            // } else {
+            //     tablenum
+            // }
+
+            // console.log('num: ', isNaN("a"))
+                // console.log(typeof NaN)
+            //NaN = Not a Number // isNaN()
+
+            // a === parseInt(a)
+        // const val = condition ? true : false;
+
+            //falsy values
+            /**
+             *  null
+             *  ""
+             *  0
+             *  undefined
+             *  !true
+             *  !1
+             * */
+          //  console.log(typeof num)
+            
+            // console.log("username: ", username)
+           // window.open("http://www.google.com", "_blank", 400, 400)
+        </script>
+    </div>
+</body>
+
+</html>

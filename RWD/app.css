@@ -1,0 +1,82 @@
+/*
+ Common Styles
+ @authors: Sai
+*/
+
+* {
+    margin: 0;
+    padding: 0
+}
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Tilt+Neon&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.wrap {
+    width: 800px;
+    margin: 0 auto;
+}
+
+.flex {
+    display: flex;
+}
+
+.col {
+    margin-right: 5px;
+}
+.col h2, .col p{ 
+    padding: 10px;
+}
+/* Light Theme Start */
+body.light .col h2 {
+    background-color: #379683;
+    color: #ffffff;
+}
+
+body.light .col p {
+    background-color: #8EE4AF;
+    color: #000000;
+}
+/* Light Theme End */
+
+/* Dark Theme Start */
+body.dark .col h2 {
+    background-color: #05386B;
+    color: #ffffff;
+}
+
+body.dark .col p {
+    background-color: #379683;
+    color: #000000;
+}
+
+.copyright {
+    display: none;
+}
+/* Dark Theme End*/
+
+/* RWD */
+@media print { 
+    .copyright {
+        display: block;
+    }
+}
+
+@media screen and (min-width: 400px) {
+    body {
+        background-color: red;
+    }
+}
+
+@media screen and (min-width: 786px) {
+    body {
+        background-color: blue;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    body {
+        background-color: yellow;
+    }
+}

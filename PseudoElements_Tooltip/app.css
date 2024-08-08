@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Tilt+Neon&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.wrap {
+    width: 1120px;
+    margin: 0 auto;
+}
+
+.mb_anchor {
+    text-decoration: none;
+    background-color: #363636;
+    padding: 10px 25px;
+    display: inline-block;
+    color: #ffffff;
+    position: relative;
+}
+.mb_anchor:hover {
+    background-color: #cfcfcf;
+    color: #000;
+}
+
+.mb_anchor div {
+    display: none;
+}
+
+.mb_anchor:hover div {
+    display: inline-block;
+    position: absolute;
+    background-color: #363636;
+    color: #ffffff;
+    padding: 10px;
+    width: 200px;
+    /* top: 0;
+    left: 140px; */
+    border-radius: 5px;
+    text-align: center;
+}
+
+.mb_anchor .arrow {
+    width:10px;
+    height: 10px;
+    /* right: 10px; */
+    color: #363636;
+    position: absolute;
+    left:-5px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.mb_anchor.bottom:hover div {
+    top: 50px;
+    left: 0;
+}
+.arrow.bottom, .arrow.left, .arrow.right, .arrow.top {
+    display: none;
+}
+.mb_anchor.bottom .arrow.bottom {
+    left:0;
+    top:-10px;
+    border: 1px solid red;
+    display: none;
+}
+
+.mb_anchor.bottom .arrow.bottom {
+    display: block;
+}
+/* .mb_anchor:hover span::before {
+   
+} */

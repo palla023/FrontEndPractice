@@ -1,0 +1,60 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 1120px;
+    margin: 0 auto;
+    overflow: auto;
+    background-color:bisque;
+    height: 600px;
+    position: relative;
+}
+.cell_1, .cell_2, .cell_3, .cell_4 {
+    width: 257px;
+    padding: 5px;
+    margin: 5px;
+    background-color: red;
+    height: 100px;
+    /* float: left; */
+    position: relative;
+    z-index: 8;
+    display: inline-block;
+}
+
+.cell_2 {
+    position: absolute;
+    /* top:0;
+    left: -280px; */
+    background-color: blue;
+    /* display: none; */
+    /* visibility: hidden; */
+    z-index: 9;
+    top: 20px;
+    left:20px;
+}
+
+.mask {
+    background-color: rgba(0,0,0, 0.3);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top:0;
+    left: 0
+}
+.modal {
+    background-color: #ffffff;
+    width: 300px;
+    height: 300px;
+    position: fixed;
+    top:25%;
+    left: 30%;
+    padding: 50px;
+}
+
+.blck {
+    display: inline-block;
+    margin: 20px;
+    padding: 20px;
+}

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            width: 400px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1> Objects </h1>
+    </div>
+
+    <script>
+        // task - exanple
+        //[1,4,5,1,2,2,3,7,9,9]
+
+        //- remove duplicate
+        //Javascript -JS
+        //JSON - Javascript Object Notation - API [Response]
+        // Software Arc
+        // - Analasys [Requirement]
+        // - Design - UI/UX[RIA], BUILD, Dataflow[UML], Folder Struc| Servers
+
+        // const nums =[1,2,3,4,5];
+        // const [a, b, c, d, e] = nums;
+
+        // const heros = {
+        //     hero_1,
+        //     // hero_2: "Ant Man",
+        //     hero_3: "Spider Man",
+        //     others: {
+        //         hero_4: "Super Man",
+        //         hero_5: "Aqua Man"
+        //     }
+        // }
+
+        // const {
+        //     hero_1,
+        //     hero_2 = b,
+        //     hero_3,
+        //     others: {
+        //         hero_4,
+        //         hero_5
+        //     }
+        // } = heros;
+
+        // console.log("Heros: ", hero_1,hero_2,hero_3,hero_4,hero_5);
+        
+
+        //CI/CD pipelines - Jenkins build dev -> Dev, S - done
+
+        // function 4 page1, page4 - 4
+
+        //Anonymus Function
+        // function() {
+
+        // }
+
+
+        // array.map(function() {})
+
+        (function() {
+            const currentArr = [1, 4, 5, 1, 2, 2, 3, 7, 9, 9];
+            const filteredArray = [...new Set(currentArr)];
+
+            for (let i = 0; i < filteredArray.length; i++) {
+                for (let j = 1; j <= 12; j++) {
+                    console.log(filteredArray[i] + "*" + j + " = " + (j * filteredArray[i]));
+                }
+            }
+        })()
+
+        // //Named Function/Method
+        // function printTable() {
+        //    const currentArr = [1, 4, 5, 1, 2, 2, 3, 7, 9, 9];
+        //     const filteredArray = [...new Set(currentArr)];
+
+        //     for (let i = 0; i < filteredArray.length; i++) {
+        //         for (let j = 1; j <= 12; j++) {
+        //             console.log(filteredArray[i] + "*" + j + " = " + (j * filteredArray[i]));
+        //         }
+        //     }
+        // }
+
+        // printTable();
+
+        const printTable = function() {
+            //logic
+        }
+
+        printTable();        
+
+
+        //Function Literal
+        // var myFunction = function() {
+        //     //logic
+        // }
+
+        //ES5 - Arrow function
+
+    </script>
+
+</body>
+
+</html>

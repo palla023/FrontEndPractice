@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            width: 400px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        #section {
+            padding: 20px;
+            background-color: green;
+        }
+        #parentSection {
+            padding: 20px;
+            background-color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="header">Events Bubbling</h1>
+        <div id="parentSection">
+            <div id="section">
+                <button id="btn"> Click Me </button>
+            </div>
+        </div>
+
+
+        <!-- <a href="javascript:viod(0)" id="anch"> Yahoo </a> -->
+        <a href="http://www.google.com" id="anch"> Yahoo </a>
+        <!-- <button id="addTask"> Add New Task</button> -->
+    </div>
+
+    <script src="./app.js"></script>
+</body>
+
+</html>

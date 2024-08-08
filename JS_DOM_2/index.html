@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            width: 400px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        /* //selectors
+            tagname
+            classname
+            id
+            
+            B.Tech : CSE : 65
+
+            Tag Name
+            Sai - 10 M
+
+            Class Name
+            M Sai - 2 M
+
+            ID
+            StudentID: unqiue
+        */
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="header" title="DOM TITLE">DOM: Document Object Model</h1>
+        <button id="btn">Add Header</button>
+        <!-- <button id="dbtn">Delete</button> -->
+    </div>
+
+    <script>
+        const doc = document;
+        let count = 0;
+        doc.querySelector("#btn").onclick = function () {
+            const h2Elem = doc.createElement("h2");
+            const allH2Elems = doc.querySelectorAll(".sub-header");
+            if (allH2Elems.length === 0) {
+                count = count + 1;
+                h2Elem.innerText = "Hello this is dynamic Element! " + count;
+                h2Elem.setAttribute("title", ("title " + count))
+                h2Elem.className = "sub-header";
+                h2Elem.style.backgroundColor = "red";
+                h2Elem.style.color = "#fff";
+                h2Elem.style.padding = "10px";
+
+                doc.querySelectorAll(".container")[0].appendChild(h2Elem);
+                this.innerText = "Delete Header";
+            } else {
+                allH2Elems[allH2Elems.length-1].remove();
+                this.innerText = "Add Header";
+            }
+        }
+
+        //  doc.querySelector("#dbtn").onclick = function () {
+        //    const allH2Elems = doc.querySelectorAll(".sub-header");
+        //    console.log(allH2Elems[4].getAttribute("title"))
+        //    allH2Elems[allH2Elems.length-1].remove()
+        // }
+
+        // doc.getElementById("btn").onclick = function () {
+        //     const h2Elem = doc.createElement("h2");
+        //     h2Elem.innerText = "Hello this is dynamic Element!";
+        //     h2Elem.className = "sub-header";
+        //     h2Elem.style.backgroundColor = "red";
+        //     h2Elem.style.color = "#fff";
+        //     h2Elem.style.padding = "10px"
+
+        //     doc.getElementsByClassName("container")[0].appendChild(h2Elem)
+
+        //     //add/insert/render
+
+        //     console.log('Elem: ', h2Elem)
+        // }
+
+
+        // doc.getElementById("dbtn").onclick = function () {
+        //    const allH2Elems = doc.getElementsByClassName("sub-header");
+        //    allH2Elems[allH2Elems.length-1].remove()
+        // }
+
+        // // const arr = [1,2,3,4,5]
+        // //length - 5, index - 0
+        // arr[arr.length - 1]
+        // doc.getElementsByTagName("h1")[6]
+        //["h1", "h1", "h1"]
+
+        //set/setter, get/getter/retrive
+        // const classSelectors = document.getElementsByClassName("header");
+        // const elem = document.getElementById("header_id");
+        // console.log("classSelectors: ", classSelectors);
+
+
+        // <h2>Hello this is dynamic Element!</h2>
+
+
+    </script>
+</body>
+
+</html>

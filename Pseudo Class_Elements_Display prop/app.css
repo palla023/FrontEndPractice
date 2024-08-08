@@ -1,0 +1,121 @@
+/*
+ Common Styles
+ @author: Palla
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Tilt+Neon&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.wrap {
+    width: 400px;
+    margin: 0 auto;
+}
+
+h3::before {
+    content: "⚛";
+    font-size: 28px;
+    color: blue;
+    margin-right: 5px;
+    padding-right: 5px
+}
+
+h3::after {
+    content: "⚛";
+    font-size: 28px;
+    color: blue;
+    margin-left: 5px;
+    padding-left: 5px
+}
+
+h3:hover {
+    color: red;
+}
+
+.paragraph::first-line {
+    color: red;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* Menu Start*/
+/* Menu End */
+
+/*  anchor links css style */
+.anchors a{
+    text-decoration: none;
+    padding: 10px;
+    background-color: #363636;
+    display: inline-block;
+    margin-right: 5px;
+    color: #ffffff;
+}
+
+.anchors a:hover, .anchors a:focus{
+    text-decoration: underline;
+    background-color: #cfcfcf;
+    color: #363636;
+}
+
+.anchors a.active {
+    background-color: #565656;
+    color: #000000;
+}
+
+/* display: none | inline| inline-block | block | flex | grid ; */
+
+.row {
+    padding: 10px;
+    background-color: aqua;
+    /* overflow: auto; */
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+}
+
+.row .col {
+    background-color: blue;
+    padding: 10px;
+    width: 51px;
+    height: 50px;
+    /* float: left; */
+    margin-right: 5px;
+    margin-bottom: 5px;
+
+}
+
+/* .row .col:nth-child(5), .row .col:nth-child() { */
+    /* background-color: green;
+    display: block; */
+    /* margin-right: 0;
+} */
+
+.row .col:first-child {
+    background-color: red;
+}
+
+.row .col:last-child {
+    background-color: red;
+}
+
+.row .col.one {
+    order: 1
+}
+.row .col.two {
+    order: 2
+}
+.row .col.three {
+    order: 3
+}
+.row .col.four {
+    order: 4
+}
+.row .col.five {
+    order: 5
+}
+.row .col.six {
+    order: 6
+}
+

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .container {
+        width: 400px;
+        margin: 0 auto;
+      }
+
+      h1 {
+        text-align: center;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <button id="ChangeTextBtn">Change Text</button>
+      <h1>BOM: Browser Object Model</h1>
+      <h1>DOM: Document Object Model 1</h1>
+      <h1>DOM: Document Object Model 2</h1>
+      <h1>DOM: Document Object Model 3</h1>
+      <h1>DOM: Document Object Model 4</h1>
+      <h1>DOM: Document Object Model 5</h1>
+      <h1>DOM: Document Object Model 6</h1>
+      <h1>DOM: Document Object Model 7</h1>
+      <h1>DOM: Document Object Model 8</h1>
+
+      <!-- <a href="http://www.google.com" target="_blank">Google</a> -->
+      <button id="btn">Open Window</button>
+      <button id="closebtn">Close Window</button>
+    </div>
+
+    <script>
+      // window = {
+      //     document : {}
+      // }
+
+      //DOM - tree form
+
+      var popupHandle = null;
+
+      document.querySelector("#btn").onclick = function () {
+        if (!popupHandle) {
+          popupHandle = window.open(
+            "./win.html",
+            "_blank",
+            "width=400, height=400"
+          );
+          popupHandle.moveTo(500, 250);
+          //    popupHandle.resizeBy(600, 600);
+          popupHandle.moveBy(250, 250);
+        }
+      };
+
+      document.querySelector("#closebtn").onclick = function () {
+        popupHandle.close();
+        popupHandle = null;
+      };
+      const arr = [1, 2, 3, 4];
+      const htmlH1Elem = document.getElementsByTagName("h1");
+      console.log(" htmlH1Elem[1]: ", htmlH1Elem);
+      console.log(" arr: ", arr);
+
+      htmlH1Elem[5].style.color = "red";
+      htmlH1Elem[5].innerText = "Sai";
+      document.querySelector("#ChangeTextBtn").onclick = function () {
+        htmlH1Elem[1].innerText = "Ravi";
+        htmlH1Elem[1].style.color = "Orange";
+      };
+      // console.log("h1 tag: ", document.getElementsByTagName("h1"))
+    </script>
+  </body>
+</html>

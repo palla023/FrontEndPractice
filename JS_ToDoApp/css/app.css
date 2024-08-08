@@ -1,0 +1,61 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 400px;
+    margin: 0 auto;
+}
+
+h1 {
+    text-align: center;
+}
+
+.inpt {
+    padding: 20px;
+    width: 360px;
+}
+#addTask{
+    background-color: #04AA6D;
+    color: white;
+}
+
+button {
+    padding: 10px 25px;
+    margin-top: 5px;
+    border: none;
+    background-color: bisque;
+    color: #000;
+}
+
+ul {
+    list-style-type: none;
+}
+
+ul li{
+    padding: 10px;
+    display: flex;
+}
+ul li span{
+    display: inline-block;
+    width: 280px;
+    padding: 15px 10px;
+}
+ul li button{
+    margin-left: 2px;
+}
+ul li input{
+    border: none;
+    padding: 5px;
+}
+
+ul li:nth-child(even){
+    background-color: #cfcfcf;
+}
+.error{
+    display: none;
+}
+.inputError{
+    border: 1px solid red;
+}

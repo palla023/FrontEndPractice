@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            width: 400px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            text-align: center;
+        }
+        .animate {
+            width:100px;
+            height: 100px;
+            background-color: red;
+
+        }
+        .animate.active {
+            transform: translate(300px);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1> Loops & Conditions & Arrow Functions </h1>
+        
+    </div>
+    <script>
+        // const username = "Sai"; //assignment operator
+        // const student = "Sai";
+
+        const nums = [1,2,3,4,5,6,7,8,9];
+        // console.log('nums.indexOf(6): ', nums.indexOf(6))
+
+
+
+
+        // if(nums.indexOf(6) !== -1) {
+        //     console.log("Number 6 present in array");
+        // } else {
+        //     console.log("Number 6 not present in array");
+        // }
+        
+        // let login = false;
+        
+     //   let login = (username === "Sai") ? true : fasle;
+        
+
+        // if(username === "Sai") {
+        //     // console.log("Hi Sai, How are you?");
+        //     login = true;
+        // } else {
+        //     // console.log("Hi, How are you?");
+        //     login = false
+        // }
+
+
+
+        // comparision
+        // let a = 1;
+        // let b = "1";
+
+        // console.log(a === b); //comparision Operator
+
+        // if(username === "Sai") {
+        //     // if(student === "Sai") {
+        //         console.log("Hi Sai, How are you?")
+        //     // }
+        // } else if(username === "Smith") {
+        //     console.log("Hi Smith, How are you?")
+        // } else {
+        //     console.log("Hi, Please let me know your name?")
+        // }
+
+        //if
+        //else
+        //else if
+        //nested if\
+
+
+        //switch case
+        // switch(username) {
+        //     case "Sai":
+        //         console.log("Hello Sai");
+        //     break;
+        //     case "Smith":
+        //         console.log("Hello Smith");
+        //     break;
+        //     default:
+        //         console.log("Hi, Please let me know your name:")
+        // }
+        //print numbers from 1 to 100, check if number is equal to 50 - dont print;
+
+            // for(let i = 1; i <= 100; i++) {
+            //     //loop logic
+            //     if(i !== 50) {
+            //         console.log("i: ", i)
+            //     }
+            // }
+
+            // 9
+            // 0,1,2,3,4,5,6,7,8,
+            for (let i = 0; i < nums.length; i++) {
+                    //loop logic
+                    nums[i] = nums[i] + 1
+                    //console.log("Each Number:", nums[i]+1)
+                    if(i !== 50) {
+                        console.log("i: ", i)
+                    }
+                }
+                console.log('nums: ', nums)
+
+        // let newNumns = nums.map((num) => num+1);
+
+        // nums.forEach((num) => {
+        //     num = num + 1;
+        //     return num;
+        // });
+        // console.log('nums: ', nums)
+        // console.log('newNumns: ', newNumns)
+
+
+        // for()
+        // forEach
+        // for in
+        // for of
+        // while
+        // do while
+
+        // map
+        // filter
+
+
+    </script>
+</body>
+</html>

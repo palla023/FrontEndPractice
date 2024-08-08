@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            width: 400px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1> Functions Scope </h1>
+    </div>
+
+    <script>
+        // var a = 1; //Global Scope - Hoisting
+        // var b = "Sai";
+        // var arr = [1, 2, 3, 4];
+        // console.log("a: ", arr);
+        // console.log("a: ", arr);
+
+        //first time
+        // console.log("Values of a: ", a);
+        // console.log("Values of a: ", b);
+        // console.log("Values of a: ", arr);
+
+        //local scope/functional/block
+        //ES5 - let, const //block level scope
+        // function vizag() {
+        //     var user = "Ant Man"; //functional scope
+        //     //2nd time
+        //     console.log("Values of a inSide Vizag: ", a);
+        //     console.log("Values of a inSide Vizag: ", b);
+        //     console.log("Values of a inSide Vizag: ", arr);
+
+        //     console.log("user first time: ", user)
+        // }
+
+    //     if(true) {
+    //         //mutable variables/ immutable variable
+    //         const num = 99;
+    // //        num = 100;
+    //     }
+        // console.log("num: ", num); //show stopper - error handling
+        // for(let i = 0; i < 5; i++) {
+        //     console.log(i)
+        // }
+
+
+        // console.log("i: ", i);
+
+      //  vizag();
+        //3rd time
+        // console.log("Values of a outSide Vizag: ", a);
+        // console.log("Values of a outSide Vizag: ", b);
+        // console.log("Values of a outSide Vizag: ", arr);
+
+        // console.log("user 2nd time - outside: ", user)
+
+        function myFunction(username, email, id) {//parameters passing -  pass by value, pass by reference
+            var a = 1;
+            console.log("arguments: ", arguments);
+            console.log("First Name: ", firstname);
+            console.log("Last Name: ", lastname);
+            console.log("Email:  ", email);
+            console.log("Id: ", id);
+            console.log("Emplyee ID: ", id)
+            console.log("------------------------")
+        }
+        console.log(username)
+
+        myFunction("Sai", "sai@abc.com");
+        myFunction("Smith", "Will", "smith@gmail.com", "420");
+
+
+        //Scope - levt vs const vs var
+        //Hoisting
+        //function parameter passing
+        //function arguments
+
+    </script>
+
+</body>
+
+</html>
